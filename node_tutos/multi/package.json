@@ -1,0 +1,14 @@
+{
+  "name": "MultipleFileRead",
+  "version": "0.0.1",
+  "description": "Multiple file read",
+  "main": "mutiread.js",
+  "author": {
+    "name": "Andrija Cacanovic",
+    "email": ""
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "readline": "^1.3.0"
+  }
+}
