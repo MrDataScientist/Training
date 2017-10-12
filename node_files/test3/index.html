@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node delivered HTML </title>
+</head>
+<body>
+   <div>
+   	<h1>Send JSON to Node</h1>
+        <button onClick="sendJSON()">Send</button>
+        <p id ="result">
+        </p>
+   </div>
+<script>
+ var myData = [
+	{
+	    "SKU": "5-0441-101",
+	    "AOI4326WKT": "GEOMETRYCOLLECTION(POLYGON((13.186157939984 52.5949343790512,13.1840980034602 52.4942979028991,13.4216773491303 52.4947159584244,13.4203040581153 52.5945172769486,13.186157939984 52.5949343790512)))",
+      "BBox":"POLYGON((10.04766225675 36.726553933357,10.04766225675 36.895873133871,10.3099608406972 36.895873133871,10.3099608406972 36.726553933357,10.04766225675 36.726553933357))",
+      "SizeOfAOI":"178.45",
+      "StartDate":"2017-09-27",
+      "EndDate":"2017-09-28"
+	},
+	{
+    "SKU": "5-0441-102",
+    "AOI4326WKT": "GEOMETRYCOLLECTION(POLYGON((13.186157939984 52.5949343790512,13.1840980034602 52.4942979028991,13.4216773491303 52.4947159584244,13.4203040581153 52.5945172769486,13.186157939984 52.5949343790512)))",
+    "BBox":"POLYGON((10.04766225675 36.726553933357,10.04766225675 36.895873133871,10.3099608406972 36.895873133871,10.3099608406972 36.726553933357,10.04766225675 36.726553933357))",
+    "SizeOfAOI":"178.45",
+    "StartDate":"2017-09-27",
+    "EndDate":"2017-09-28"
+	},
+	{
+    "SKU": "5-0441-103",
+    "AOI4326WKT": "GEOMETRYCOLLECTION(POLYGON((13.186157939984 52.5949343790512,13.1840980034602 52.4942979028991,13.4216773491303 52.4947159584244,13.4203040581153 52.5945172769486,13.186157939984 52.5949343790512)))",
+    "BBox":"POLYGON((10.04766225675 36.726553933357,10.04766225675 36.895873133871,10.3099608406972 36.895873133871,10.3099608406972 36.726553933357,10.04766225675 36.726553933357))",
+    "SizeOfAOI":"178.45",
+    "StartDate":"2017-09-27",
+    "EndDate":"2017-09-28"
+	}
+    ]
+
+function sendJSON(){
+var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       document.getElementById("result").innerHTML =
+       this.responseText;
+    }
+ };
+ 
+xmlhttp.open("POST", "http://localhost:3000");
+xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+xmlhttp.send(JSON.stringify(myData));
+}
+
+</script>
+</body>
+</html>
