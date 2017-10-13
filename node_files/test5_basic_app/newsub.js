@@ -4,3 +4,4 @@ function subtract(){
 }
 
 module.exports = subtract;
+subtract();
