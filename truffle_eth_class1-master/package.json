@@ -25,5 +25,8 @@
   "homepage": "https://github.com/tomw1808/truffle_eth_class1#readme",
   "devDependencies": {
     "truffle-default-builder": "^2.0.0"
+  },
+  "dependencies": {
+    "truffle": "^3.4.11"
   }
 }
