@@ -27,6 +27,6 @@
     "truffle-default-builder": "^2.0.0"
   },
   "dependencies": {
-    "truffle": "^3.4.11"
+    "truffle": "^4.1.7"
   }
 }
