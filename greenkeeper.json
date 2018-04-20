@@ -1,0 +1,27 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "colors/package.json",
+        "multiple-file-upload-node-master/package.json",
+        "my-project/package.json",
+        "mytodo/package.json",
+        "node_files/file_uploader/package.json",
+        "node_files/package.json",
+        "node_files/test2/package.json",
+        "node_files/test3/package.json",
+        "node_files/test4/package.json",
+        "node_tutos/Grunt/package.json",
+        "node_tutos/multi/package.json",
+        "todo/package.json",
+        "truffle_eth_class1-master/package.json",
+        "truffle_eth_class2-master/s06/example_interact_with_contracts_once_deployed/package.json",
+        "truffle_eth_class2-master/s11/frontend/package.json",
+        "truffle_eth_class2-master/s11/l02-intro-truffle/package.json",
+        "truffle_eth_class2-master/s11/l08-simple-frontend/package.json",
+        "truffle_eth_class2-master/s11/l10-we-add-events/package.json",
+        "truffle_eth_class2-master/s12/cvindex/package.json"
+      ]
+    }
+  }
+}
